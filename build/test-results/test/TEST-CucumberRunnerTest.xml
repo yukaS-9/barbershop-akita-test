@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CucumberRunnerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-07-03T04:39:13" hostname="MacBook-Pro-sysadmin.local" time="16.42">
+  <properties/>
+  <testcase name="TC-1 Главная страница загружается с правильным заголовком" classname="CucumberRunnerTest" time="11.431"/>
+  <testcase name="TC-2 Сайт доступен и содержит название бренда" classname="CucumberRunnerTest" time="0.785"/>
+  <testcase name="TC-3 Главная страница доступна по HTTPS" classname="CucumberRunnerTest" time="1.281"/>
+  <testcase name="TC-4 Заголовок страницы содержит полное название компании" classname="CucumberRunnerTest" time="0.691"/>
+  <testcase name="TC-5 Главная страница содержит контент о барбершопе" classname="CucumberRunnerTest" time="1.225"/>
+  <testcase name="TC-6 Страница успешно загружается в headless-режиме" classname="CucumberRunnerTest" time="1.006"/>
+  <system-out><![CDATA[
+@smoke @p0
+Сценарий: TC-1 Главная страница загружается с правильным заголовком   ?[90m# src/test/resources/features/smoke.feature:7?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m"Главная"?[0m?[32m по ссылке ?[0m?[32m?[1m"mainPageUrl"?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m"Главная"?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m"OldBoy Barbershop"?[0m       ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p0
+Сценарий: TC-2 Сайт доступен и содержит название бренда               ?[90m# src/test/resources/features/smoke.feature:13?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m"Главная"?[0m?[32m по ссылке ?[0m?[32m?[1m"mainPageUrl"?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m"Главная"?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m"OldBoy"?[0m                  ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p0
+Сценарий: TC-3 Главная страница доступна по HTTPS                     ?[90m# src/test/resources/features/smoke.feature:19?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m"Главная"?[0m?[32m по ссылке ?[0m?[32m?[1m"mainPageUrl"?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m"Главная"?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m"Barbershop"?[0m              ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p0
+Сценарий: TC-4 Заголовок страницы содержит полное название компании   ?[90m# src/test/resources/features/smoke.feature:25?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m"Главная"?[0m?[32m по ссылке ?[0m?[32m?[1m"mainPageUrl"?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m"Главная"?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m"OldBoy Barbershop"?[0m       ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p1
+Сценарий: TC-5 Главная страница содержит контент о барбершопе         ?[90m# src/test/resources/features/smoke.feature:31?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m"Главная"?[0m?[32m по ссылке ?[0m?[32m?[1m"mainPageUrl"?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m"Главная"?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m"Barbershop"?[0m              ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p1
+Сценарий: TC-6 Страница успешно загружается в headless-режиме         ?[90m# src/test/resources/features/smoke.feature:37?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m"Главная"?[0m?[32m по ссылке ?[0m?[32m?[1m"mainPageUrl"?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m"Главная"?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m"OldBoy"?[0m                  ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/y.dolbilova/workspace/barbershop-akita-test/build/downloads/1783053553355_80670_1
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+июл. 03, 2026 7:39:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+июл. 03, 2026 7:39:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.47. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=150.0.7871.47 Platform=mac
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on mac (7983e694b87625fa9f7a2ffd4aad483a)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on mac (7983e694b87625fa9f7a2ffd4aad483a),proxy=null,downloadsFolder=/Users/y.dolbilova/workspace/barbershop-akita-test/build/downloads/1783053553355_80670_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+]]></system-err>
+</testsuite>

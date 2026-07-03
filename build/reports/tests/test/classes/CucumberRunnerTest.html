@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class CucumberRunnerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class CucumberRunnerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; CucumberRunnerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">16.419s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">TC-1 Главная страница загружается с правильным заголовком</td>
+<td class="success">11.431s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC-2 Сайт доступен и содержит название бренда</td>
+<td class="success">0.785s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC-3 Главная страница доступна по HTTPS</td>
+<td class="success">1.281s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC-4 Заголовок страницы содержит полное название компании</td>
+<td class="success">0.691s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC-5 Главная страница содержит контент о барбершопе</td>
+<td class="success">1.225s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">TC-6 Страница успешно загружается в headless-режиме</td>
+<td class="success">1.006s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@smoke @p0
+Сценарий: TC-1 Главная страница загружается с правильным заголовком   ?[90m# src/test/resources/features/smoke.feature:7?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m по ссылке ?[0m?[32m?[1m&quot;mainPageUrl&quot;?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m&quot;OldBoy Barbershop&quot;?[0m       ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p0
+Сценарий: TC-2 Сайт доступен и содержит название бренда               ?[90m# src/test/resources/features/smoke.feature:13?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m по ссылке ?[0m?[32m?[1m&quot;mainPageUrl&quot;?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m&quot;OldBoy&quot;?[0m                  ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p0
+Сценарий: TC-3 Главная страница доступна по HTTPS                     ?[90m# src/test/resources/features/smoke.feature:19?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m по ссылке ?[0m?[32m?[1m&quot;mainPageUrl&quot;?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m&quot;Barbershop&quot;?[0m              ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p0
+Сценарий: TC-4 Заголовок страницы содержит полное название компании   ?[90m# src/test/resources/features/smoke.feature:25?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m по ссылке ?[0m?[32m?[1m&quot;mainPageUrl&quot;?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m&quot;OldBoy Barbershop&quot;?[0m       ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p1
+Сценарий: TC-5 Главная страница содержит контент о барбершопе         ?[90m# src/test/resources/features/smoke.feature:31?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m по ссылке ?[0m?[32m?[1m&quot;mainPageUrl&quot;?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m&quot;Barbershop&quot;?[0m              ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+
+@smoke @p1
+Сценарий: TC-6 Страница успешно загружается в headless-режиме         ?[90m# src/test/resources/features/smoke.feature:37?[0m
+  ?[32mДано ?[0m?[32mсовершен переход на страницу ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m по ссылке ?[0m?[32m?[1m&quot;mainPageUrl&quot;?[0m ?[90m# steps.DefaultSteps.navigateToPage(java.lang.String,java.lang.String)?[0m
+  ?[32mТогда ?[0m?[32mстраница ?[0m?[32m?[1m&quot;Главная&quot;?[0m?[32m загрузилась?[0m                                ?[90m# steps.DefaultSteps.pageShouldBeLoaded(java.lang.String)?[0m
+  ?[32mИ ?[0m?[32mв заголовке страницы присутствует текст ?[0m?[32m?[1m&quot;OldBoy&quot;?[0m                  ?[90m# steps.DefaultSteps.checkPageTitle(java.lang.String)?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/y.dolbilova/workspace/barbershop-akita-test/build/downloads/1783053553355_80670_1
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+июл. 03, 2026 7:39:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 150
+июл. 03, 2026 7:39:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 150.0.7871.47. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=150.0.7871.47 Platform=mac
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on mac (7983e694b87625fa9f7a2ffd4aad483a)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on mac (7983e694b87625fa9f7a2ffd4aad483a),proxy=null,downloadsFolder=/Users/y.dolbilova/workspace/barbershop-akita-test/build/downloads/1783053553355_80670_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10</a> at 3 июл. 2026 г., 07:39:30</p>
+</div>
+</div>
+</body>
+</html>
