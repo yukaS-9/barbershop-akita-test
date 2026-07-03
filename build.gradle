@@ -1,0 +1,65 @@
+import java.time.Duration
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+description = """Smoke tests for OldBoy Barbershop website (Cucumber + Selenide)"""
+group = 'com.oldboy'
+version = '1.0.0'
+
+dependencies {
+    // Selenide — управление браузером
+    implementation 'com.codeborne:selenide:6.19.1'
+
+    // Cucumber — BDD-тесты
+    implementation 'io.cucumber:cucumber-java:7.15.0'
+    implementation 'io.cucumber:cucumber-junit:7.15.0'
+    implementation 'io.cucumber:cucumber-picocontainer:7.15.0'
+
+    // Тестирование
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.10.2'
+
+    // JUnit 4 — для Cucumber runner
+    testImplementation 'junit:junit:4.13.2'
+
+    // Логирование
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    // Hamcrest — матчеры для assert
+    implementation 'org.hamcrest:hamcrest:2.2'
+}
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+test {
+    systemProperty "cucumber.features", "src/test/resources/features"
+    systemProperty "cucumber.glue", "steps"
+    systemProperty "cucumber.plugin", "pretty,html:build/reports/cucumber/report.html"
+
+    // Параметры браузера из system properties
+    systemProperty "selenide.browser", System.getProperty("browser", "chrome")
+    systemProperty "selenide.headless", System.getProperty("headless", "false")
+    systemProperty "selenide.timeout", "15000"
+    systemProperty "selenide.pageLoadTimeout", "30000"
+
+    // Таймаут на выполнение теста
+    timeout = Duration.ofMinutes(3)
+
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+    }
+}

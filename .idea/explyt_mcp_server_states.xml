@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ServerStates">
+    <option name="serversStates">
+      <map>
+        <entry key="github" value="CONNECTED" />
+        <entry key="kaiten" value="CONNECTED" />
+      </map>
+    </option>
+  </component>
+</project>
